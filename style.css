@@ -2,7 +2,7 @@ html
 {
   margin: 0;
   padding: 0;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(css/background.jpg);
+  background-image:url(css/background.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -225,28 +225,25 @@ transition: transform 1s;
 }
 @keyframes slide
 {
-  0%{
-    background: url(css/buenosaires.jpg);
-    background-size: 100%;
-    background-position:center;
-  }
+
   25%{
-    background: url(css/paris.jpg);
+    background: url(css/slide2.jpg);
     background-size: 100%;
     background-position:center;
+
   }
   50%{
-    background: url(css/newyork.jpg);
+    background: url(css/slide3.jpg);
     background-size: 100%;
     background-position:center;
   }
   75%{
-    background: url(css/amsterdam.jpg);
+    background: url(css/slide1.jpg);
     background-size: 100%;
     background-position:center;
   }
   100%{
-    background: url(css/santiago.jpg);
+    background: url(css/law.jpg);
     background-size: 100%;
     background-position:center;
   }
@@ -325,7 +322,7 @@ transition: transform 1s;
   }
 
   /*Mobile Configuration*/
-  
+
   @media only screen and (max-width: 768px) {
     .hero
     {
@@ -391,3 +388,14 @@ transition: transform 1s;
       }
 
   }
+
+.row{
+
+  opacity: 0;
+
+}
+
+.row div{
+  display: inline-block;
+  margin-left: 15px;
+}
